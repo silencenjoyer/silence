@@ -12,10 +12,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Silence\\Collection\\": "",
-      "exclude-from-classmap": [
-        "/Tests/"
-      ]
+      "Silence\\Collection\\": ""
     }
   },
   "require": {
