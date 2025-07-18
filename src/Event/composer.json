@@ -1,0 +1,30 @@
+{
+  "name": "silencenjoyer/silence-event",
+  "type": "library",
+  "description": "The basis of the Silence event system.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Gebrich",
+      "email": "an_gebrich@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Silence\\Event\\": ""
+    }
+  },
+  "require": {
+    "php": "^8.3.0",
+    "silencenjoyer/silence-routing": "*",
+    "psr/event-dispatcher": "^1.0",
+    "psr/http-message": "^1.1|^2.0",
+    "psr/http-server-handler": "^1.0",
+    "psr/http-server-middleware": "^1.0.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "*",
+    "symfony/var-dumper": "^7.3"
+  }
+}

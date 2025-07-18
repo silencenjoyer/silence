@@ -1,0 +1,86 @@
+services:
+  nginx-proxy:
+    build:
+      context: ./docker
+      dockerfile: proxy/Dockerfile
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - reverse-proxy
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./docker/vhost.d:/etc/nginx/vhost.d
+      - ./docker/html:/usr/share/nginx/html
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./public:/app
+      - ./docker/nginx/templates:/etc/nginx/templates:ro
+    depends_on:
+      - php-fpm
+    networks:
+      site:
+      reverse-proxy:
+      default:
+        aliases:
+          - ${NGINX_VIRTUAL_HOST}
+    environment:
+      - VIRTUAL_HOST=${NGINX_VIRTUAL_HOST}
+
+  php-fpm:
+    dns:
+      - 8.8.8.8
+    build:
+      context: ./docker
+      dockerfile: php/Dockerfile
+      args:
+        - UID=${PHP_UID:-1000}
+        - GID=${PHP_GID:-1000}
+        - USERNAME=${PHP_USERNAME:-php}
+        - GROUP=${PHP_GROUP:-php_group}
+    user: ${PHP_USERNAME:-php}:${PHP_GROUP:-php_group}
+    ports:
+      - 3305:3305
+    volumes:
+      - ./:/app
+      - ./docker/php/php.ini:/usr/local/etc/php/conf.d/custom.ini
+    restart: on-failure
+    working_dir: /app
+    networks:
+      - site
+
+  composer:
+    build:
+      context: ./docker
+      dockerfile: php/Dockerfile
+      args:
+        - UID=${PHP_UID:-1000}
+        - GID=${PHP_GID:-1000}
+        - USERNAME=${PHP_USERNAME:-php}
+        - GROUP=${PHP_GROUP:-php_group}
+    volumes:
+      - ../:/app
+    command: composer install
+
+#  mysql:
+#    image: mysql:9.2.0
+#    ports:
+#      - "3316:3306"
+#    environment:
+#      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASS:-root}
+#      MYSQL_USER: ${DB_USER:-dev}
+#      MYSQL_PASSWORD: ${DB_PASS:-dev}
+#      MYSQL_DATABASE: ${DATABASE:-dev}
+#    volumes:
+#      - ./db/data:/var/lib/mysql
+#    networks:
+#      - site
+
+networks:
+  site:
+  reverse-proxy:
+    external: true
+  default:

@@ -1,0 +1,27 @@
+{
+  "name": "silencenjoyer/silence-event-symfony",
+  "type": "library",
+  "description": "Symfony realization for the Silence event system.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Gebrich",
+      "email": "an_gebrich@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Silence\\Event\\Realizations\\Symfony\\": ""
+    }
+  },
+  "require": {
+    "php": "^8.3.0",
+    "silencenjoyer/silence-event": "*",
+    "symfony/event-dispatcher": "^7.3"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "*",
+    "symfony/var-dumper": "^7.3"
+  }
+}

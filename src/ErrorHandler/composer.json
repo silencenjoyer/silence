@@ -1,0 +1,33 @@
+{
+  "name": "silencenjoyer/silence-error-handling",
+  "type": "library",
+  "description": "Silence error handling system.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Gebrich",
+      "email": "an_gebrich@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Silence\\ErrorHandler\\": ""
+    }
+  },
+  "require": {
+    "php": "^8.3.0",
+    "silencenjoyer/silence-http-spec": "*",
+    "silencenjoyer/silence-http-parser": "*",
+    "silencenjoyer/silence-http": "*",
+    "psr/container": "^2.0",
+    "psr/http-message": "^1.1|^2.0",
+    "psr/http-server-handler": "^1.0",
+    "psr/http-server-middleware": "^1.0.0",
+    "psr/log": "^3.0.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "*",
+    "symfony/var-dumper": "^7.3"
+  }
+}

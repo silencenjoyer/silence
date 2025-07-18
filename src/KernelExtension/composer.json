@@ -1,0 +1,25 @@
+{
+  "name": "silencenjoyer/silence-kernel-extension",
+  "type": "library",
+  "description": "Silence application kernel extension system.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Gebrich",
+      "email": "an_gebrich@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Silence\\KernelExtension\\": ""
+    }
+  },
+  "require": {
+    "php": "^8.3.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "*",
+    "symfony/var-dumper": "^7.3"
+  }
+}

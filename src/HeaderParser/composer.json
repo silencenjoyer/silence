@@ -1,0 +1,26 @@
+{
+    "name": "silencenjoyer/silence-http-parser",
+  "type": "library",
+  "description": "Component for reading HTTP headers.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Gebrich",
+      "email": "an_gebrich@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Silence\\ErrorHandler\\": ""
+    }
+  },
+  "require": {
+    "php": "^8.3.0",
+    "ext-http": "*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "*",
+    "symfony/var-dumper": "^7.3"
+  }
+}

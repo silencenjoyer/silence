@@ -1,0 +1,34 @@
+{
+  "name": "silencenjoyer/silence-kernel",
+  "type": "library",
+  "description": "Silence application kernel.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Gebrich",
+      "email": "an_gebrich@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Silence\\Kernel\\": ""
+    }
+  },
+  "require": {
+    "php": "^8.3.0",
+    "psr/http-message": "^1.1|^2.0",
+    "psr/http-server-handler": "^1.0",
+    "psr/http-server-middleware": "^1.0.0",
+    "symfony/dotenv": "^7.3",
+    "silencenjoyer/silence-kernel-extension": "*",
+    "silencenjoyer/silence-http": "*",
+    "silencenjoyer/silence-config": "*",
+    "silencenjoyer/silence-error-handling": "*",
+    "silencenjoyer/silence-http-parser": "*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "*",
+    "symfony/var-dumper": "^7.3"
+  }
+}

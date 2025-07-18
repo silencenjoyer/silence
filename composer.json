@@ -1,0 +1,41 @@
+{
+  "name": "silencenjoyer/silence",
+  "type": "library",
+  "description": "Framework",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Gebrych",
+      "email": "an_gebrich@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Silence\\": "src",
+      "App\\": "app"
+    }
+  },
+  "require": {
+    "php": "^8.3.0",
+    "psr/container": "^2.0",
+    "psr/http-message": "^1.1|^2.0",
+    "psr/http-server-handler": "^1.0",
+    "psr/http-server-middleware": "^1.0.0",
+    "psr/event-dispatcher": "^1.0",
+    "nyholm/psr7": "^1.8.0",
+    "symfony/dependency-injection": "*",
+    "symfony/config": "^7.3",
+    "nyholm/psr7-server": "^1.1",
+    "twig/twig": "^3.0",
+    "symfony/event-dispatcher": "^7.3",
+    "symfony/dotenv": "^7.3",
+    "psr/log": "^3.0.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "*",
+    "symfony/var-dumper": "^7.3",
+    "phpunit/phpunit": "^12.2",
+    "symplify/monorepo-builder": "^11.2"
+  }
+}
