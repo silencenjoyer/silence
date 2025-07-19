@@ -2,7 +2,7 @@
   "name": "silencenjoyer/silence-runtime",
   "type": "library",
   "description": "Silence application runtime system.",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
@@ -12,7 +12,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Silence\\ErrorHandler\\": ""
+      "Silence\\Runtime\\": ""
     }
   },
   "require": {
