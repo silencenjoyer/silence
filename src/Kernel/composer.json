@@ -2,7 +2,7 @@
   "name": "silencenjoyer/silence-kernel",
   "type": "library",
   "description": "Silence application kernel.",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
@@ -17,18 +17,28 @@
   },
   "require": {
     "php": "^8.3.0",
-    "psr/http-message": "^1.1|^2.0",
-    "psr/http-server-handler": "^1.0",
-    "psr/http-server-middleware": "^1.0.0",
-    "symfony/dotenv": "^7.3",
+    "psr/container": "^2.0",
+    "psr/http-factory": "^1.0.0",
+    "psr/event-dispatcher": "^1.0",
+
     "silencenjoyer/silence-kernel-extension": "*",
     "silencenjoyer/silence-http": "*",
     "silencenjoyer/silence-config": "*",
     "silencenjoyer/silence-error-handling": "*",
-    "silencenjoyer/silence-http-parser": "*"
+    "silencenjoyer/silence-http-parser": "*",
+    "silencenjoyer/silence-event": "*",
+    "silencenjoyer/silence-routing": "*",
+    "silencenjoyer/silence-runtime": "*",
+
+    "symfony/dotenv": "^7.3",
+    "symfony/config": "^7.3",
+    "symfony/dependency-injection": "^7.3.0",
+
+    "nyholm/psr7": "^1.8.0"
   },
   "require-dev": {
     "phpstan/phpstan": "*",
-    "symfony/var-dumper": "^7.3"
+    "symfony/var-dumper": "^7.3",
+    "shipmonk/composer-dependency-analyser": "dev-master"
   }
 }

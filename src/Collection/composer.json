@@ -2,7 +2,7 @@
   "name": "silencenjoyer/silence-collection",
   "type": "library",
   "description": "A collection for storing data in a structured and typed form.",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
@@ -21,6 +21,7 @@
   "require-dev": {
     "phpstan/phpstan": "*",
     "phpunit/phpunit": "^12.2",
-    "symfony/var-dumper": "^7.3"
+    "symfony/var-dumper": "^7.3",
+    "shipmonk/composer-dependency-analyser": "^1.8"
   }
 }

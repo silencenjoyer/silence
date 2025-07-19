@@ -2,7 +2,7 @@
   "name": "silencenjoyer/silence-event-symfony",
   "type": "library",
   "description": "Symfony realization for the Silence event system.",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
@@ -17,11 +17,14 @@
   },
   "require": {
     "php": "^8.3.0",
+    "psr/http-message":"^1.1|^2.0",
+    "silencenjoyer/silence-routing": "*",
     "silencenjoyer/silence-event": "*",
-    "symfony/event-dispatcher": "^7.3"
+    "symfony/event-dispatcher-contracts": "^3.0.0"
   },
   "require-dev": {
     "phpstan/phpstan": "*",
-    "symfony/var-dumper": "^7.3"
+    "symfony/var-dumper": "^7.3",
+    "shipmonk/composer-dependency-analyser": "dev-master"
   }
 }
