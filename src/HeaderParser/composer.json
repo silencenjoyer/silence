@@ -1,8 +1,8 @@
 {
-    "name": "silencenjoyer/silence-http-parser",
+  "name": "silencenjoyer/silence-http-parser",
   "type": "library",
   "description": "Component for reading HTTP headers.",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
@@ -16,8 +16,7 @@
     }
   },
   "require": {
-    "php": "^8.3.0",
-    "ext-http": "*"
+    "php": "^8.3.0"
   },
   "require-dev": {
     "phpstan/phpstan": "*",
