@@ -59,7 +59,7 @@ return static function (ContainerConfigurator $container): void {
             ->autoconfigure()
     ;
 
-    $appPath = dirname(__DIR__, 4) . '/app';
+    $appPath = dirname(__DIR__, 5) . '/app';
     $services->load('App\\', $appPath)
         ->exclude([$appPath . '/Bootstrap', $appPath . '/Config'])
     ;
