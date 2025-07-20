@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Silence\Routing\RouteProviders;
 
-use Silence\KernelExtension\RouteProviderInterface;
 use Silence\Routing\RouteGroupInterface;
+use Silence\Routing\RouteProviderInterface;
 use Silence\Routing\RouterInterface;
 
 /**

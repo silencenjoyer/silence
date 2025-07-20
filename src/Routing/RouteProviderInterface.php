@@ -11,10 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Silence\KernelExtension;
-
-use Silence\Routing\RouteGroupInterface;
-use Silence\Routing\RouteInterface;
+namespace Silence\Routing;
 
 /**
  * Interface for application route provider objects.

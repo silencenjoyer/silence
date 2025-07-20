@@ -15,8 +15,8 @@ namespace Silence\Routing\Tests\RouteProviders;
 
 use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
-use Silence\KernelExtension\RouteProviderInterface;
 use Silence\Routing\RouteGroupInterface;
+use Silence\Routing\RouteProviderInterface;
 use Silence\Routing\RouteProviders\RouteProviderRegistry;
 use Silence\Routing\RouterInterface;
 
