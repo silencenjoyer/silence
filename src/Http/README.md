@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/silencenjoyer/silence-http.svg)](https://packagist.org/packages/silencenjoyer/silence-http)
 [![PHP Version Require](https://img.shields.io/packagist/php-v/silencenjoyer/silence-http.svg)](https://packagist.org/packages/silencenjoyer/silence-http)
-[![License](https://img.shields.io/github/license/silencenjoyer/silence-http)](LICENSE)
+[![License](https://img.shields.io/github/license/silencenjoyer/silence-http)](LICENSE.md)
 
 The package provides HTTP kernel functionality for processing HTTP requests.
 The PSR-15 Middleware chain is involved in the processing. 
@@ -37,4 +37,4 @@ The package is the core of HTTP request processing in the Silence application.
 If you are writing your own package, you can use ``silencenjoyer/silence-http`` as basic algorithm for request handling.
 
 ## 📄 License
-This package is distributed under the MIT licence. For more details, see [LICENSE](LICENSE).
+This package is distributed under the MIT licence. For more details, see [LICENSE](LICENSE.md).

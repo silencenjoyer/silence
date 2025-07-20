@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/silencenjoyer/silence-routing.svg)](https://packagist.org/packages/silencenjoyer/silence-routing)
 [![PHP Version Require](https://img.shields.io/packagist/php-v/silencenjoyer/silence-routing.svg)](https://packagist.org/packages/silencenjoyer/silence-routing)
-[![License](https://img.shields.io/github/license/silencenjoyer/silence-routing)](LICENSE)
+[![License](https://img.shields.io/github/license/silencenjoyer/silence-routing)](LICENSE.md)
 
 The package provides a routing system that allows you to bind a route or group of routes to a specific incoming request.
 
@@ -104,4 +104,4 @@ The package is used as the routing core in the Silence application.
 If you are writing your own package, you can connect ``silencenjoyer/silence-routing`` to register and resolve routes with parameter substitution.
 
 ## 📄 License
-This package is distributed under the MIT licence. For more details, see [LICENSE](LICENSE).
+This package is distributed under the MIT licence. For more details, see [LICENSE](LICENSE.md).

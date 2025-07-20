@@ -1,9 +1,8 @@
 # Silence Kernel
 
-[![Tests](https://github.com/silencenjoyer/silence-kernel/actions/workflows/tests.yml/badge.svg)](https://github.com/silencenjoyer/silence-kernel/actions/workflows/tests.yml)
 [![Latest Stable Version](https://img.shields.io/packagist/v/silencenjoyer/silence-kernel.svg)](https://packagist.org/packages/silencenjoyer/silence-kernel)
 [![PHP Version Require](https://img.shields.io/packagist/php-v/silencenjoyer/silence-kernel.svg)](https://packagist.org/packages/silencenjoyer/silence-kernel)
-[![License](https://img.shields.io/github/license/silencenjoyer/silence-kernel)](LICENSE)
+[![License](https://img.shields.io/github/license/silencenjoyer/silence-kernel)](LICENSE.md)
 
 The core of the **Silence** PHP framework, providing a configurable environment, basic application loading, integration with [Symfony DependencyInjection](https://symfony.com/doc/current/components/dependency_injection.html), and application lifecycle management.
 
@@ -44,4 +43,4 @@ The package is used as the basis for all applications and modules within the Sil
 If you are writing your own package, you can connect ``silencenjoyer/silence-kernel`` to manage dependencies and the environment.
 
 ## 📄 License
-This package is distributed under the MIT licence. For more details, see [LICENSE](LICENSE).
+This package is distributed under the MIT licence. For more details, see [LICENSE](LICENSE.md).
