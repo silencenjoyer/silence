@@ -28,7 +28,7 @@ This monorepo contains the source code for the following packages:
 
 ## ⚒️ Code Quality:
 - Tests: ``composer test`` 
-- Static analysis: ``php vendor/bin/phpstan``
+- Static analysis: ``composer phpstan``
 - Composer dependency analyze: ``php vendor/bin/composer-dependency-analyser``
 - PSR-12 formatting
 
