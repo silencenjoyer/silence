@@ -1,33 +1,33 @@
 {
-  "name": "silencenjoyer/silence-event",
-  "type": "library",
-  "description": "The basis of the Silence event system.",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Andrew Gebrich",
-      "email": "an_gebrich@outlook.com"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Silence\\Event\\": ""
+    "name": "silencenjoyer/silence-event",
+    "type": "library",
+    "description": "The basis of the Silence event system.",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Gebrich",
+            "email": "an_gebrich@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Silence\\Event\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
     },
-    "exclude-from-classmap": [
-      "/Tests/"
-    ]
-  },
-  "require": {
-    "php": "^8.3.0",
-    "silencenjoyer/silence-routing": "*",
-    "psr/event-dispatcher": "^1.0",
-    "psr/http-message": "^1.1|^2.0",
-    "symfony/event-dispatcher-contracts": "^3.0.0"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "*",
-    "symfony/var-dumper": "^7.3",
-    "shipmonk/composer-dependency-analyser": "dev-master"
-  }
+    "require": {
+        "php": "^8.3.0",
+        "silencenjoyer/silence-routing": "^0.0",
+        "psr/event-dispatcher": "^1.0",
+        "psr/http-message": "^1.1|^2.0",
+        "symfony/event-dispatcher-contracts": "^3.0.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "*",
+        "symfony/var-dumper": "^7.3",
+        "shipmonk/composer-dependency-analyser": "dev-master"
+    }
 }

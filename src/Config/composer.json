@@ -1,29 +1,29 @@
 {
-  "name": "silencenjoyer/silence-config",
-  "type": "library",
-  "description": "Silence application configuration.",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Andrew Gebrich",
-      "email": "an_gebrich@outlook.com"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Silence\\Config\\": ""
+    "name": "silencenjoyer/silence-config",
+    "type": "library",
+    "description": "Silence application configuration.",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Gebrich",
+            "email": "an_gebrich@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Silence\\Config\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
     },
-    "exclude-from-classmap": [
-      "/Tests/"
-    ]
-  },
-  "require": {
-    "php": "^8.3.0"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "*",
-    "symfony/var-dumper": "^7.3",
-    "shipmonk/composer-dependency-analyser": "^1.8"
-  }
+    "require": {
+        "php": "^8.3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "*",
+        "symfony/var-dumper": "^7.3",
+        "shipmonk/composer-dependency-analyser": "^1.8"
+    }
 }
