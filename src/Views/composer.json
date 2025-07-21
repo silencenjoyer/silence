@@ -1,30 +1,30 @@
 {
-  "name": "silencenjoyer/silence-view",
-  "type": "library",
-  "description": "Silence application view system.",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Andrew Gebrich",
-      "email": "an_gebrich@outlook.com"
+    "name": "silencenjoyer/silence-view",
+    "type": "library",
+    "description": "Silence application view system.",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Gebrich",
+            "email": "an_gebrich@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Silence\\Views\\": ""
+        }
+    },
+    "require": {
+        "php": "^8.3.0",
+        "silencenjoyer/silence-http-spec": "^0.0",
+        "psr/http-message": "^1.1|^2.0",
+        "psr/http-factory": "^1.1.0",
+        "twig/twig": "^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "*",
+        "symfony/var-dumper": "^7.3",
+        "shipmonk/composer-dependency-analyser": "^1.8"
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Silence\\Views\\": ""
-    }
-  },
-  "require": {
-    "php": "^8.3.0",
-    "silencenjoyer/silence-http-spec": "*",
-    "psr/http-message": "^1.1|^2.0",
-    "psr/http-factory": "^1.1.0",
-    "twig/twig": "^3.0"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "*",
-    "symfony/var-dumper": "^7.3",
-    "shipmonk/composer-dependency-analyser": "^1.8"
-  }
 }

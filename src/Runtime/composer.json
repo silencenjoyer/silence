@@ -1,33 +1,33 @@
 {
-  "name": "silencenjoyer/silence-runtime",
-  "type": "library",
-  "description": "Silence application runtime system.",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Andrew Gebrich",
-      "email": "an_gebrich@outlook.com"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Silence\\Runtime\\": ""
+    "name": "silencenjoyer/silence-runtime",
+    "type": "library",
+    "description": "Silence application runtime system.",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Gebrich",
+            "email": "an_gebrich@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Silence\\Runtime\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
     },
-    "exclude-from-classmap": [
-      "/Tests/"
-    ]
-  },
-  "require": {
-    "php": "^8.3.0",
-    "silencenjoyer/silence-http": "*",
-    "silencenjoyer/silence-error-handling": "*",
-    "silencenjoyer/silence-event": "*",
-    "psr/event-dispatcher": "^1.0"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "*",
-    "symfony/var-dumper": "^7.3",
-    "shipmonk/composer-dependency-analyser": "dev-master"
-  }
+    "require": {
+        "php": "^8.3.0",
+        "silencenjoyer/silence-http": "^0.0",
+        "silencenjoyer/silence-error-handling": "^0.0",
+        "silencenjoyer/silence-event": "^0.0",
+        "psr/event-dispatcher": "^1.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "*",
+        "symfony/var-dumper": "^7.3",
+        "shipmonk/composer-dependency-analyser": "dev-master"
+    }
 }

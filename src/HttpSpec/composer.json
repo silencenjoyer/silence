@@ -1,25 +1,25 @@
 {
-  "name": "silencenjoyer/silence-http-spec",
-  "type": "library",
-  "description": "Static specification of the HTTP protocol.",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Andrew Gebrich",
-      "email": "an_gebrich@outlook.com"
+    "name": "silencenjoyer/silence-http-spec",
+    "type": "library",
+    "description": "Static specification of the HTTP protocol.",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Gebrich",
+            "email": "an_gebrich@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Silence\\HttpSpec\\": ""
+        }
+    },
+    "require": {
+        "php": "^8.3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "*",
+        "symfony/var-dumper": "^7.3"
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Silence\\HttpSpec\\": ""
-    }
-  },
-  "require": {
-    "php": "^8.3.0"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "*",
-    "symfony/var-dumper": "^7.3"
-  }
 }

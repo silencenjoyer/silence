@@ -1,28 +1,28 @@
 {
-  "name": "silencenjoyer/silence-kernel-extension",
-  "type": "library",
-  "description": "Silence application kernel extension system.",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Andrew Gebrich",
-      "email": "an_gebrich@outlook.com"
+    "name": "silencenjoyer/silence-kernel-extension",
+    "type": "library",
+    "description": "Silence application kernel extension system.",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Gebrich",
+            "email": "an_gebrich@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Silence\\KernelExtension\\": ""
+        }
+    },
+    "require": {
+        "php": "^8.3.0",
+        "silencenjoyer/silence-kernel": "^0.0",
+        "symfony/dependency-injection": "^7.3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "*",
+        "symfony/var-dumper": "^7.3",
+        "shipmonk/composer-dependency-analyser": "^1.8"
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Silence\\KernelExtension\\": ""
-    }
-  },
-  "require": {
-    "php": "^8.3.0",
-    "silencenjoyer/silence-kernel": "*",
-    "symfony/dependency-injection": "^7.3.0"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "*",
-    "symfony/var-dumper": "^7.3",
-    "shipmonk/composer-dependency-analyser": "^1.8"
-  }
 }
