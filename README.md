@@ -1,5 +1,12 @@
 # 🍃 Silence Framework Monorepo
 
+[![Tests](https://github.com/silencenjoyer/silence/actions/workflows/tests.yml/badge.svg)](https://github.com/silencenjoyer/silence/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/silencenjoyer/silence/branch/main/graph/badge.svg)](https://codecov.io/gh/silencenjoyer/silence)
+[![Static Analyze](https://github.com/silencenjoyer/silence/actions/workflows/phpstan.yml/badge.svg)](https://github.com/silencenjoyer/silence/actions/workflows/phpunit.yml)
+[![Latest Stable Version](https://img.shields.io/packagist/v/silencenjoyer/silence.svg)](https://packagist.org/packages/silencenjoyer/silence)
+[![PHP Version Require](https://img.shields.io/packagist/php-v/silencenjoyer/silence.svg)](https://packagist.org/packages/silencenjoyer/silence)
+[![License](https://img.shields.io/github/license/silencenjoyer/silence)](LICENSE)
+
 This is the monorepository for the Silence Framework - a set of modular PHP packages designed for building lightweight, flexible applications with minimal dependencies and maximum extensibility.  
 
 Silence is based on the [Symfony DependencyInjection](https://symfony.com/doc/current/components/dependency_injection.html) container and aims to provide clean abstractions for request handling, event dispatching, and application flow.
@@ -28,7 +35,7 @@ This monorepo contains the source code for the following packages:
 
 ## ⚒️ Code Quality:
 - Tests: ``composer test`` 
-- Static analysis: ``php vendor/bin/phpstan``
+- Static analysis: ``composer phpstan``
 - Composer dependency analyze: ``php vendor/bin/composer-dependency-analyser``
 - PSR-12 formatting
 
