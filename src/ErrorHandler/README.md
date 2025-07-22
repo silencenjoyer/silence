@@ -6,7 +6,7 @@
 
 The package is designed for centralised processing of errors and exceptions. It provides a readable view of errors.
 
-<img src="docs/img/error_base_template.png" alt="Base Template Example" width="50%">
+![Base Template Example](docs/img/error_base_template.png)
 
 This package is part of the monorepository [silencenjoyer/silence](https://github.com/silencenjoyer/silence), but can be used independently.
 
