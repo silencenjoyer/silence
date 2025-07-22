@@ -9,6 +9,8 @@ use Psr\Http\Message\ServerRequestFactoryInterface;
 use Psr\Http\Message\StreamFactoryInterface;
 use Psr\Http\Message\UploadedFileFactoryInterface;
 use Psr\Http\Message\UriFactoryInterface;
+use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use Silence\Config\AppConfig;
 use Silence\Config\AppConfigFactory;
 use Silence\Config\AppContext;
@@ -139,5 +141,9 @@ return static function (ContainerConfigurator $container): void {
     // Header Parser
     $services->set(HeaderParser::class, HeaderParser::class);
     $services->set(QualityNegotiator::class, QualityNegotiator::class);
+    // ===========================================================================
+
+    // PSR-3 Logger
+    $services->set(LoggerInterface::class, NullLogger::class);
     // ===========================================================================
 };
