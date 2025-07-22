@@ -84,9 +84,7 @@ class Kernel implements KernelInterface
         $this->loadDotEnv();
 
         $this->container = new ContainerBuilder();
-        $this->container->setParameter('app.env', $this->getEnvValue());
-        $this->container->setParameter('app.base_path', $this->config->getBasePath());
-        $this->container->setParameter('app.debug', ($_ENV['APP_DEBUG'] ?? '0') === '1');
+        $this->registerContainerParams();
 
         $loader = new PhpFileLoader($this->container, new FileLocator(__DIR__ . '/Config/Services'));
         $loader->load('services.php');
@@ -112,6 +110,19 @@ class Kernel implements KernelInterface
         $this->initEvents();
 
         $this->dispatcher->dispatch($this->eventFactory->kernelBooted());
+    }
+
+    /**
+     * Registers parameters in the container.
+     *
+     * @return void
+     */
+    protected function registerContainerParams(): void
+    {
+        $this->container->setParameter('app.env', $this->getEnvValue());
+        $this->container->setParameter('app.base_path', $this->config->getBasePath());
+        $this->container->setParameter('app.configs', $this->config->getConfigFiles());
+        $this->container->setParameter('app.debug', ($_ENV['APP_DEBUG'] ?? '0') === '1');
     }
 
     /**

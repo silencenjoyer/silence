@@ -70,7 +70,7 @@ return static function (ContainerConfigurator $container): void {
     // Application Config
     $services->set(AppConfig::class)
         ->factory([AppConfigFactory::class, 'create'])
-        ->args(['%app.env%', '%app.base_path%/app/Config', ['config']])
+        ->args(['%app.env%', '%app.base_path%/app/Config', '%app.configs%'])
     ;
     // ===========================================================================
 
