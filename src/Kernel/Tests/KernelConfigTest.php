@@ -60,6 +60,28 @@ class KernelConfigTest extends TestCase
         $this->assertSame([$ext1, $ext2], $config->getExtensions());
     }
 
+    public function testWithConfigPathAddsSingleFile(): void
+    {
+        $config = new KernelConfig('/app');
+
+        $configFile = 'test';
+
+        $config->withConfigFile($configFile);
+
+        $this->assertSame(['config', $configFile], $config->getConfigFiles());
+    }
+
+    public function testWithConfigFilesAddsMultipleFiles(): void
+    {
+        $config = new KernelConfig('/app');
+
+        $configFiles = ['test', 'test_2'];
+
+        $config->withConfigFiles($configFiles);
+
+        $this->assertSame(['config', ...$configFiles], $config->getConfigFiles());
+    }
+
     public function testGetDotEnvsDefault(): void
     {
         $basePath = '/app';

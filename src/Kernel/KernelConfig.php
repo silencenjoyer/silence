@@ -49,6 +49,10 @@ final class KernelConfig
         '.env.dev',
         '.env.local',
     ];
+    /**
+     * @var list<string> 
+     */
+    protected array $configFiles = ['config'];
 
     public function __construct(string $basePath)
     {
@@ -100,6 +104,42 @@ final class KernelConfig
     public function getExtensions(): array
     {
         return $this->extensions;
+    }
+
+    /**
+     * Registration of configuration files.
+     *
+     * @param string $file
+     * @return $this
+     */
+    public function withConfigFile(string $file): KernelConfig
+    {
+        $this->configFiles[] = $file;
+        return $this;
+    }
+
+    /**
+     * Registration of the list of configuration files.
+     *
+     * @param array<string> $configFiles
+     * @return $this
+     */
+    public function withConfigFiles(array $configFiles): KernelConfig
+    {
+        foreach ($configFiles as $file) {
+            $this->withConfigFile($file);
+        }
+        return $this;
+    }
+
+    /**
+     * Getter for list of the application configuration files.
+     *
+     * @return list<string>
+     */
+    public function getConfigFiles(): array
+    {
+        return $this->configFiles;
     }
 
     /**
